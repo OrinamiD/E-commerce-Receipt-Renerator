@@ -1,5 +1,6 @@
 import { uploadReceipt } from "../config/cloudinary.config.js";
 import { sendReceiptEmail } from "../email/emailNotification.email.js";
+import Order from "../model/order.model.js";
 import Receipt from "../model/receipt.model.js";
 ("../model/receipt.model.js");
 
@@ -11,15 +12,18 @@ export const processReceipt = async (
   receiptData: ReceiptData,
   orderId: string,
 ) => {
-  const existingOrder = await Receipt.findOne({ orderId });
+  const existingOrder = await Order.findOne({ orderId });
 
   if (!existingOrder) {
     throw new Error("Order does not exist");
   }
 
-  if (existingOrder.receiptId) throw new Error("receipt already exist");
+  const findReceipt = await Receipt.findOne({ receipt: receiptData.receiptId });
+
+  if (findReceipt) throw new Error("receipt already exist");
 
   const receiptRef = await receiptGenerate();
+  receiptData.receiptId = receiptRef;
 
   let retryCount = 0;
 
