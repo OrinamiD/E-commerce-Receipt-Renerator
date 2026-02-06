@@ -41,4 +41,3 @@ export const generateReceipt = async (req, res) => {
         }
     }
 };
-//# sourceMappingURL=checkout.controller.js.map

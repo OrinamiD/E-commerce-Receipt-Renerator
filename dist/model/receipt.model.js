@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document, Types } from "mongoose";
+import mongoose from "mongoose";
 const receiptSchema = new mongoose.Schema({
     receiptId: {
         type: String,
@@ -37,4 +37,3 @@ const receiptSchema = new mongoose.Schema({
 }, { timestamps: true });
 const Receipt = mongoose.model("Receipt", receiptSchema);
 export default Receipt;
-//# sourceMappingURL=receipt.model.js.map

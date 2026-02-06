@@ -10,4 +10,3 @@ export const orderPaid = async () => {
     const newOrder = `${orderDerails}${order}`;
     return newOrder;
 };
-//# sourceMappingURL=receipt.generation.js.map

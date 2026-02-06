@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document, Types } from "mongoose";
+import mongoose from "mongoose";
 const orderSchema = new mongoose.Schema({
     orderId: {
         type: String,
@@ -50,4 +50,3 @@ const orderSchema = new mongoose.Schema({
 }, { timestamps: true });
 const Order = mongoose.model("Order", orderSchema);
 export default Order;
-//# sourceMappingURL=order.model.js.map

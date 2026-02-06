@@ -13,4 +13,3 @@ export const connectDb = async () => {
     }
 };
 export const port = `${process.env.PORT}` || 5000;
-//# sourceMappingURL=db.config.js.map

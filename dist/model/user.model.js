@@ -1,4 +1,4 @@
-import mongoose, { Document, model, Schema } from "mongoose";
+import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
     customerName: {
         type: String,
@@ -34,4 +34,3 @@ const userSchema = new mongoose.Schema({
 }, { timestamps: true });
 const User = mongoose.model("User", userSchema);
 export default User;
-//# sourceMappingURL=user.model.js.map

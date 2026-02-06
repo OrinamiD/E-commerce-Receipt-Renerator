@@ -44,4 +44,3 @@ export const sendReceiptEmail = async (customerName, email, pdfPath) => {
     };
     await mailTransport.sendMail(emailDetails);
 };
-//# sourceMappingURL=emailNotification.email.js.map

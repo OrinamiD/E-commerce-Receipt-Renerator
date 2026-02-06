@@ -31,4 +31,3 @@ export const processReceipt = async (receiptData, orderId) => {
     });
     await savedReceipt.save();
 };
-//# sourceMappingURL=receipt.service.js.map

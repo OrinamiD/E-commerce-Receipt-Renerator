@@ -11,4 +11,3 @@ export const expiresAt = async () => {
     const expired = new Date(Date.now() + 5 * 60 * 1000);
     return expired;
 };
-//# sourceMappingURL=password.hash.js.map

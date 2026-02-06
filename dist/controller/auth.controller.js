@@ -87,4 +87,3 @@ export const signin = async (req, res) => {
         }
     }
 };
-//# sourceMappingURL=auth.controller.js.map

@@ -26,4 +26,3 @@ connectDb()
     console.log("Server is Down", error);
 });
 // protected routes
-//# sourceMappingURL=index.js.map

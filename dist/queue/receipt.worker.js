@@ -39,4 +39,3 @@ new Worker("receipt-generation", async (job) => {
 }).on("failed", (job, err) => {
     logger.error(err.message);
 });
-//# sourceMappingURL=receipt.worker.js.map

@@ -9,4 +9,3 @@ export const validateCheckoutPayment = async (req, res, next) => {
     }
     next();
 };
-//# sourceMappingURL=checkout.middleware.js.map

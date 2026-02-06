@@ -1,5 +1,4 @@
-import jwt, {} from "jsonwebtoken";
-import {} from "express";
+import jwt from "jsonwebtoken";
 import joi from "joi";
 import User from "../model/user.model.js";
 export const validateRegistration = async (req, res, next) => {
@@ -92,4 +91,3 @@ export const validateOTP = async (req, res, next) => {
     }
     next();
 };
-//# sourceMappingURL=auth.middleware.js.map

@@ -1,4 +1,3 @@
-import { errorToJSON } from "bullmq";
 import winston from "winston";
 export const logger = winston.createLogger({
     level: "info",
@@ -7,4 +6,3 @@ export const logger = winston.createLogger({
         new winston.transports.File({ filename: "errors.log" }),
     ],
 });
-//# sourceMappingURL=logger.utils.js.map

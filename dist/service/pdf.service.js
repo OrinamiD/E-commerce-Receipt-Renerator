@@ -69,4 +69,3 @@ export const generateReceiptPDF = async (data) => {
         stream.on("error", reject);
     });
 };
-//# sourceMappingURL=pdf.service.js.map

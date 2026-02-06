@@ -34,4 +34,3 @@ export const confirmPayment = async (data) => {
         orderItem: exisitingOrder,
     };
 };
-//# sourceMappingURL=checkout.service.js.map

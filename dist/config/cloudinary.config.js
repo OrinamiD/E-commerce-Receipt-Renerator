@@ -13,4 +13,3 @@ export const uploadReceipt = async (filePath) => {
     });
     return (await result).secure_url;
 };
-//# sourceMappingURL=cloudinary.config.js.map

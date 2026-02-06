@@ -1,4 +1,4 @@
-import Order, {} from "../model/order.model.js";
+import Order from "../model/order.model.js";
 import Receipt from "../model/receipt.model.js";
 import User from "../model/user.model.js";
 import { orderPaid } from "../utils/receipt.generation.js";
@@ -79,4 +79,3 @@ export const allOrder = async () => {
         order: order,
     };
 };
-//# sourceMappingURL=order.service.js.map

@@ -88,4 +88,3 @@ export const getAllOrder = async (req, res) => {
         }
     }
 };
-//# sourceMappingURL=order.controller.js.map
